@@ -17,6 +17,7 @@ fn get_process_id() -> u32 {
 fn test_if_process_id_is_returned() {
 	// assert!(get_process_id() > 0);
 	// another way to use assert macro
+	// note assert_ne requires 2 arguments
 	// this time with custom error message
 	assert_ne!(get_process_id(), 0, "There is error in code");
 }
